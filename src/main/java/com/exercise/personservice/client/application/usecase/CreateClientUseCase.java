@@ -5,6 +5,7 @@ import com.exercise.personservice.client.domain.entities.Client;
 import com.exercise.personservice.client.domain.repository.CreateClientRepository;
 import com.exercise.personservice.person.application.port.CreatePersonPort;
 import com.exercise.personservice.person.domain.entities.Person;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +19,7 @@ public class CreateClientUseCase implements CreateClientPort {
     private CreatePersonPort createPersonPort;
 
     @Override
+    @Transactional
     public void execute(Client client) {
         Person person = createPersonPort.execute(client.getPerson());
         client.setPerson(person);

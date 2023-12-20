@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface GetClientRepository {
     List<Client> findAll();
+
+    Client findById(Long idClient);
 }
