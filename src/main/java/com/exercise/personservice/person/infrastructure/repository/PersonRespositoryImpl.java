@@ -32,7 +32,7 @@ public class PersonRespositoryImpl implements GetPersonRepository, CreatePersonR
     }
 
     @Override
-    public void deleteById(Long personId) {
-        personJpaRepository.deleteById(personId);
+    public void deleteById(Long idPerson) {
+        personJpaRepository.deleteById(idPerson);
     }
 }

@@ -1,5 +1,5 @@
 package com.exercise.personservice.person.domain.repository;
 
 public interface DeletePersonRepository {
-    void deleteById(Long personId);
+    void deleteById(Long idPerson);
 }

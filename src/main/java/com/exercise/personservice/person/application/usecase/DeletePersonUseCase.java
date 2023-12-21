@@ -12,9 +12,9 @@ public class DeletePersonUseCase implements DeletePersonPort {
     DeletePersonRepository deletePersonRepository;
 
     @Override
-    public void deleteById(Long personId) {
+    public void deleteById(Long idPerson) {
 
-        deletePersonRepository.deleteById(personId);
+        deletePersonRepository.deleteById(idPerson);
 
     }
 }

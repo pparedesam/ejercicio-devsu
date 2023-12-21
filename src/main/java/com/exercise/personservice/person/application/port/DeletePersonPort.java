@@ -4,5 +4,5 @@ import com.exercise.personservice.person.domain.entities.Person;
 
 public interface DeletePersonPort {
 
-    void deleteById(Long personId);
+    void deleteById(Long idPerson);
 }
