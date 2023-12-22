@@ -27,6 +27,11 @@ public class ClientRespositoryImpl implements GetClientRepository, CreateClientR
     }
 
     @Override
+    public Client findByName(String name) {
+        return clientJpaRepository.findByPerson_Name(name);
+    }
+
+    @Override
     public Client create(Client client) {
         return clientJpaRepository.save(client);
     }

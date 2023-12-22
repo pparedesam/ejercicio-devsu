@@ -1,7 +1,7 @@
 package com.exercise.personservice.client.application.port;
 
-import com.exercise.personservice.client.domain.entities.Client;
+import com.exercise.personservice.client.application.dtos.ClientRequestDto;
 
 public interface CreateClientPort {
-    void execute(Client client);
+    void execute(ClientRequestDto clientRequestDto);
 }

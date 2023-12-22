@@ -1,5 +1,7 @@
 package com.exercise.personservice.client.application.usecase;
 
+import com.exercise.personservice.client.application.dtos.ClientRequestDto;
+import com.exercise.personservice.client.application.mapper.ClientMapper;
 import com.exercise.personservice.client.application.port.CreateClientPort;
 import com.exercise.personservice.client.domain.entities.Client;
 import com.exercise.personservice.client.domain.repository.CreateClientRepository;
@@ -18,9 +20,14 @@ public class CreateClientUseCase implements CreateClientPort {
     @Autowired
     private CreatePersonPort createPersonPort;
 
+
+
     @Override
     @Transactional
-    public void execute(Client client) {
+    public void execute(ClientRequestDto clientRequestDto) {
+
+        Client client = ClientMapper.clientDtoToClient(clientRequestDto);
+
         Person person = createPersonPort.execute(client.getPerson());
         client.setPerson(person);
         createClientRepository.create(client);

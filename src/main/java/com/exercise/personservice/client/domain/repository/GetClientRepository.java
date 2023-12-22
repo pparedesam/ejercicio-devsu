@@ -8,4 +8,6 @@ public interface GetClientRepository {
     List<Client> findAll();
 
     Client findById(Long idClient);
+
+    Client findByName(String name);
 }

@@ -3,7 +3,7 @@ package com.exercise.personservice.client.application.port;
 import com.exercise.personservice.client.application.dtos.ClientRequestDto;
 import com.exercise.personservice.client.application.dtos.ClientResponseDto;
 
-public interface GetClientPort {
+public interface GetClientByNamePort {
 
-    ClientResponseDto findById(Long idCliente);
+    ClientResponseDto findByName(String name);
 }

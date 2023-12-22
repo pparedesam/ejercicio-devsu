@@ -1,7 +1,7 @@
 package com.exercise.personservice.client.infraestructure.adapters.web;
 
+import com.exercise.personservice.client.application.dtos.ClientRequestDto;
 import com.exercise.personservice.client.application.port.CreateClientPort;
-import com.exercise.personservice.client.domain.entities.Client;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,8 +16,8 @@ public class CreateClientController {
     private CreateClientPort createClientPort;
 
     @PostMapping()
-    public ResponseEntity createClient(@RequestBody Client client){
-        createClientPort.execute(client);
+    public ResponseEntity createClient(@RequestBody ClientRequestDto clientRequestDto){
+        createClientPort.execute(clientRequestDto);
         return ResponseEntity.ok().build();
     }
 }

@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ClientJpaRepository extends JpaRepository<Client,Long> {
     void deleteById(Long idPerson);
+    Client findByPerson_Name(String name);
 }

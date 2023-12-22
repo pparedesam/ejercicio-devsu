@@ -22,7 +22,7 @@ public class Client {
 
     private String password;
 
-    private boolean state;
+    private Boolean state;
 
     @OneToOne
     @JoinColumn(name = "personaId", referencedColumnName = "id")
