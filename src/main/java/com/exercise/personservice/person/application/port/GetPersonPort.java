@@ -1,6 +1,5 @@
 package com.exercise.personservice.person.application.port;
 
-import com.exercise.personservice.client.domain.entities.Client;
 import com.exercise.personservice.person.domain.entities.Person;
 
 import java.util.List;

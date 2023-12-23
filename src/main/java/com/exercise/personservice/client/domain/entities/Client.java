@@ -25,6 +25,6 @@ public class Client {
     private Boolean state;
 
     @OneToOne
-    @JoinColumn(name = "personaId", referencedColumnName = "id")
+    @JoinColumn(name = "personId", referencedColumnName = "id")
     private Person person;
 }

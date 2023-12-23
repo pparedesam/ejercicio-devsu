@@ -1,8 +1,5 @@
 package com.exercise.personservice.client.application.usecase;
 
-import static org.mockito.Mockito.*;
-import static org.junit.jupiter.api.Assertions.*;
-
 import com.exercise.personservice.client.domain.entities.Client;
 import com.exercise.personservice.client.domain.repository.UpdateClientRepository;
 import com.exercise.personservice.person.application.port.UpdatePersonPort;
@@ -12,6 +9,11 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 public class UpdateClientUseCaseTest {
 

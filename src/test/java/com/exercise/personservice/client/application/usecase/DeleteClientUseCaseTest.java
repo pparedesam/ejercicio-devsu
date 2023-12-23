@@ -4,14 +4,12 @@ import com.exercise.personservice.client.domain.entities.Client;
 import com.exercise.personservice.client.domain.repository.DeleteClientRepository;
 import com.exercise.personservice.client.domain.repository.GetClientRepository;
 import com.exercise.personservice.person.application.port.DeletePersonPort;
-import com.exercise.personservice.person.domain.entities.Person;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 class DeleteClientUseCaseTest {

@@ -1,10 +1,6 @@
 package com.exercise.personservice.client.application.usecase;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
-
 import com.exercise.personservice.client.application.dtos.ClientResponseDto;
-import com.exercise.personservice.client.application.mapper.ClientMapper;
 import com.exercise.personservice.client.domain.entities.Client;
 import com.exercise.personservice.client.domain.repository.GetClientRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -12,8 +8,9 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import java.util.Arrays;
-import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.Mockito.*;
 
 public class GetClientUseCaseTest {
 

@@ -5,7 +5,6 @@ import com.exercise.personservice.client.domain.entities.Client;
 import com.exercise.personservice.client.domain.repository.UpdateClientRepository;
 import com.exercise.personservice.person.application.port.UpdatePersonPort;
 import com.exercise.personservice.person.domain.entities.Person;
-
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

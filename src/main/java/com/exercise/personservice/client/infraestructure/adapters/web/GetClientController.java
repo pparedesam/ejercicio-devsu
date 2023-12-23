@@ -1,6 +1,5 @@
 package com.exercise.personservice.client.infraestructure.adapters.web;
 
-import com.exercise.personservice.client.application.dtos.ClientRequestDto;
 import com.exercise.personservice.client.application.dtos.ClientResponseDto;
 import com.exercise.personservice.client.application.port.GetClientByNamePort;
 import com.exercise.personservice.client.application.port.GetClientPort;
